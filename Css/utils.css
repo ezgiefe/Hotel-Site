@@ -1,7 +1,7 @@
 
 :root{
     --white: #fff;
-    --primary: #007bff;
+    --primary: #5d482c;
     --secondary: #6c757d;
     --success: #28a745;
     --danger: #dc3545;
@@ -9,6 +9,8 @@
     --info: #17a2b8;
     --dark: #343a40;
     --light: #f8f9fa;
+    --beige: #c5ba94;
+    --coffee: #3e2911;
 }
 
 /* text colors */
@@ -30,6 +32,8 @@
 .bg-info { background-color: var(--info);}
 .bg-dark { background-color: var(--dark);}
 .bg-light { background-color: var(--light);}
+.bg-coffee { background-color: var(--coffee);}
+.bg-beige { background-color: var(--beige);}
 
 /* buttons */
 
@@ -42,12 +46,17 @@
 }
 
 .btn:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .btn-primary{
     color: var(--white);
     background-color: var(--primary);
+}
+
+.btn-light{
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 .btn-secondary{
@@ -75,15 +84,25 @@
     background-color: var(--dark);
 }
 
+.btn-coffee{
+    color: var(--white);
+    background-color: var(--coffee);
+}
+
+.btn-beige{
+    color: var(--coffee);
+    background-color: var(--beige);
+}
+
 .btn-outline{
     background: transparent;
-    border: 1px solid var(--white);
+    border: 1.5px solid var(--white);
     color: var(--white);
 }
 
 .btn-outline:hover{
     background-color: var(--white);
-    border: 1px solid var(--white);
+    border: 1.5px solid var(--white);
     color: var(--dark);
 }
 
@@ -110,6 +129,12 @@
 .flex-items > div{
     padding: 20px;
     flex-basis: 100%;
+}
+
+.flex-items .card:hover {
+    padding: 10px;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* flex-columns */
